@@ -43,3 +43,16 @@ newList.tailPush(8);
 newList.tailPush(7);
 newList.print(); // 링크드리스트 출력
 ```
+
+-----------------
+## 자바스크립트는 입력받을 수 없나요?
+자바스크립트(Node.js)에는 C언어의 scanf, Java의 Scanner와 같이 편리하게 입력할수 있는 시스템이 없어요.   
+따라서, 랜덤을 생성하는 함수에 원하는 만큼 값을 입력하면 됩니다.
+
+```javascript
+randomNumbers(number) {
+    for (var i = 0; i < number; i++) {
+        this.tailPush(Math.floor(Math.random() * 100 + 1));
+    }
+}
+```
